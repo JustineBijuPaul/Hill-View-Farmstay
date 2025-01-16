@@ -30,7 +30,7 @@ const Navigation = ({ setActiveSection }) => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/logo.webp"
+            src="/s-logo.png"
             alt="Melrmrnnil Hillview Farmstay Logo"
             className="h-12 w-12 rounded-full mr-4"
           /> <a href="../index.html">
@@ -482,13 +482,13 @@ Guests: ${data.guests}\n
 Special Requests: ${data.requests}`;
 
               // WhatsApp link (replace with your number)
-              const whatsappNumber = "918826232329"; // Add your WhatsApp number here
+              const whatsappNumber = "919495933471"; // Add your WhatsApp number here
               const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
               // Email link
               const emailSubject = "New Booking Request - Melemannil Hillview Farmstay";
               const emailBody = message;
-              const mailtoLink = `mailto:justinebijupaul@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+              const mailtoLink = `mailto:dummy@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
               // Open both links
               window.open(whatsappLink, '_blank');
@@ -618,16 +618,40 @@ Special Requests: ${data.requests}`;
         {sections[activeSection].content}
       </main>
 
-      <footer className="bg-green-900 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>© 2024 Melrmrnnil Hillview Farmstay. All Rights Reserved.</p>
-          <div className="mt-4 space-x-4">
-            <button 
-              onClick={() => setActiveSection('book_now')} 
-              className="hover:text-green-300"
-            >
-              Book Now
-            </button>
+      <footer className="bg-green-900 text-white py-12">
+        <div className="container mx-auto px-4 flex flex-col items-center">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-semibold mb-4">Melemannil Hillview Farmstay</h3>
+            <p className="text-green-100">Creating memories in the heart of nature</p>
+          </div>
+
+          <button
+            onClick={() => setActiveSection('book_now')}
+            className="px-8 py-3 bg-green-700 hover:bg-green-600 rounded-full 
+                     text-white font-medium transition-all duration-300 
+                     transform hover:scale-105 mb-8"
+          >
+            Book Your Stay
+          </button>
+
+          <div className="border-t border-green-700 w-full max-w-xl my-8"></div>
+
+          <div className="text-center">
+            <p className="mb-6">© 2024 Melemannil Hillview Farmstay. All Rights Reserved.</p>
+            <div className="flex flex-col items-center space-y-3">
+              <p className="text-green-200">Developed By</p>
+              <a 
+                href="https://www.instagram.com/linxcapture/" 
+                target='_blank' 
+                className="transform hover:scale-105 transition-transform duration-300"
+              >
+                <img 
+                  src="/linxcapture.gif" 
+                  alt="Linxcapture" 
+                  className="w-48 h-auto opacity-90 hover:opacity-100"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
