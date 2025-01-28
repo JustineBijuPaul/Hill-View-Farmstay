@@ -105,6 +105,9 @@ const FarmstayWebsite = () => {
           <p className="text-gray-700 text-lg leading-relaxed">
             Nestled in the heart of Kuttikannam, our farmstay offers a warm and cozy retreat for travelers seeking a home away from home. Our beautiful farm is surrounded by hills and valleys, providing the perfect blend of relaxation and exploration.
           </p>
+          <div className="bg-white text-center m-5 rounded-lg">
+            Contact Number : +919495933471
+          </div>
           <div className="md:grid grid-cols-3 grid-rows-2 gap-4 mt-6">
             <div className="relative w-full h-full">
               <img
@@ -178,6 +181,7 @@ const FarmstayWebsite = () => {
                 key={i + 1}
                 src={`/${i + 1}.jpg`}
                 alt={`Gallery Image ${i + 1}`}
+                loading='lazy'
                 className="mb-4 rounded-lg shadow-md object-cover w-full"
               />
             ))}
@@ -259,26 +263,31 @@ const FarmstayWebsite = () => {
                 <img
                   src="/13.jpg"
                   alt="Orchard View"
+                  loading='lazy'
                   className="rounded-lg shadow-md object-cover w-full mt-4"
                 />
                 <img
                   src="/34.jpg"
                   alt="Coffee Plantation"
+                  loading='lazy'
                   className="rounded-lg shadow-md object-cover w-full mt-4"
                 />
                 <img
                   src="/4.jpg"
                   alt="Coffee Plantation"
+                  loading='lazy'
                   className="rounded-lg shadow-md object-cover w-full mt-4"
                 />
                 <img
                   src="/16.jpg"
                   alt="Coffee Plantation"
+                  loading='lazy'
                   className="rounded-lg shadow-md object-cover w-full mt-4"
                 />
                 <img
                   src="/18.jpg"
                   alt="Coffee Plantation"
+                  loading='lazy'
                   className="rounded-lg shadow-md object-cover w-full mt-4"
                 />
                 <img
@@ -605,6 +614,9 @@ Special Requests: ${data.requests}`;
               Submit Booking Request
             </button>
           </form>
+          <div className="bg-white text-center m-5 rounded-lg">
+            Contact Number : +919495933471
+          </div>
         </div>
       ),
     }
@@ -623,6 +635,9 @@ Special Requests: ${data.requests}`;
           <div className="text-center mb-8">
             <h3 className="text-2xl font-semibold mb-4">Melemannil Hillview Farmstay</h3>
             <p className="text-green-100">Creating memories in the heart of nature</p>
+            <div className="bg-white text-center m-5 rounded-lg text-black">
+              Contact Number : +919495933471
+            </div>
           </div>
 
           <button
@@ -640,14 +655,14 @@ Special Requests: ${data.requests}`;
             <p className="mb-6">© 2024 Melemannil Hillview Farmstay. All Rights Reserved.</p>
             <div className="flex flex-col items-center space-y-3">
               <p className="text-green-200">Developed By</p>
-              <a 
-                href="https://www.instagram.com/linxcapture/" 
-                target='_blank' 
+              <a
+                href="https://www.instagram.com/linxcapture/"
+                target='_blank'
                 className="transform hover:scale-105 transition-transform duration-300"
               >
-                <img 
-                  src="/linxcapture.gif" 
-                  alt="Linxcapture" 
+                <img
+                  src="/linxcapture.gif"
+                  alt="Linxcapture"
                   className="w-48 h-auto opacity-90 hover:opacity-100"
                 />
               </a>
